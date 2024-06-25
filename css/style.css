@@ -1,0 +1,20 @@
+/* o seletor abaixo seleciona o body e muda a cor de fundo, a cor da letra e acrescenta uma margem no fundo */
+body {
+    background-color: #887ec64c;
+    color: white;
+    margin-bottom: 300px;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+.verde {
+    color: green;
+}
+#maiusculas {
+    text-transform: uppercase;
+}
+
+li::marker {
+    color: red;
+}

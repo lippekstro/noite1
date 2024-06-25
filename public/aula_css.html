@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        div p {
+            color: blue;
+        }
+
+        div > p {
+            text-decoration: underline;
+        }
+
+        div + p {
+            text-transform: uppercase;
+        }
+
+        div ~ p {
+            background-color: yellow;
+        }
+
+        a:hover {
+            background-color: brown;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: blueviolet;
+        }
+
+        p::first-line {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">INICIO</a>
+    <a href="aula_css.html">CSS</a>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio provident unde ipsam. Sequi, eos rem et dicta sunt totam veritatis! Molestias, sed. Nisi odio maiores similique sed cumque, ex doloribus.</p>
+        <ul>
+            <li><p>Lorem</p></li>
+        </ul>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dignissimos expedita deleniti placeat ab illo obcaecati animi nisi aperiam totam porro blanditiis aliquam ullam labore officiis perspiciatis tempore? Modi, minus!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, laudantium tenetur magnam facere vitae obcaecati officiis voluptatibus quod, aperiam quisquam, fugiat incidunt? Quam voluptatem est, similique itaque perspiciatis nesciunt ex!</p>
+
+
+</body>
+</html>
