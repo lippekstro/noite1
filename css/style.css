@@ -1,20 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+
+:root {
+    --cor-primaria: #402E7A;
+    --cor-secundaria: #4C3BCF;
+    --cor-terciaria: #4B70F5;
+    --cor-quartenaria: #3DC2EC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite VN", cursive;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
 /* o seletor abaixo seleciona o body e muda a cor de fundo, a cor da letra e acrescenta uma margem no fundo */
 body {
-    background-color: #887ec64c;
-    color: white;
+    background-color: var(--cor-quartenaria);
+    color: var(--cor-primaria);
     margin-bottom: 300px;
+    background-image: url("../imgs/lp.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left top;
 }
 
 .sublinhado {
     text-decoration: underline;
 }
 .verde {
-    color: green;
+    color: var(--cor-primaria);
 }
 #maiusculas {
     text-transform: uppercase;
 }
 
 li::marker {
-    color: red;
+    color: var(--cor-secundaria);
+}
+
+table {
+    /* background-color: var(--cor-secundaria); */
+
+    margin: 10px 5px 3px 1px;
+}
+
+table, th, td {
+    border: 1px solid var(--cor-primaria);
+    border-radius: 5px;
+    border-collapse: collapse;
+
+}
+
+th {
+    padding: 10px;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+}
+
+a:hover {
+    background-color: brown;
+    color: white;
+    padding: 0.5rem;
+}
+
+#teste {
+    background-color: var(--cor-primaria);
+    height: 100px;
+    width: 50%;
+    position: relative;
+}
+
+#filha {
+    background-color: var(--cor-secundaria);
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.teste-over {
+    width: 30%;
+    height: 200px;
+    background-color: var(--cor-secundaria);
+    overflow: auto;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+/* .fixa {
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+nav {
+    background-color: var(--cor-secundaria);
+    position: sticky;
+    top: 0;
 }
